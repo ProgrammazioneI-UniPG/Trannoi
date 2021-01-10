@@ -405,9 +405,9 @@ static void stampa_giocatori(){
 
 static void det_stanza_inizio(struct Stanza *ptr){
     int probStanza = 1+rand()%100;
-    if (probStanza < 50 && probStanza >=0){
+    if (probStanza < 25 && probStanza >=0){
       ptr->tipo_stanza = 3;
-    }else if(probStanza < 71 && probStanza >= 51){
+    }else if(probStanza < 40 && probStanza >= 26){
       ptr->tipo_stanza = 2;
     }else if(probStanza < 71 && probStanza >= 41){
       ptr->tipo_stanza = 1;
